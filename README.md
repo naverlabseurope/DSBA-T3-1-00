@@ -1,4 +1,4 @@
-#Task 1 Inference 
+# Task 1 Inference 
 link to (notebook1)
 - Implement Softmax with Temp / Nucleus / Beam Search
 - T5 take all the tasks write a report on how different decoding algorithms with T5
