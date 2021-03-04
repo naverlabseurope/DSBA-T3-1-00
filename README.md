@@ -1,3 +1,9 @@
+## T5 model
+ - how to get if from Hugging face
+ - to know more about it: 
+ Stanford guest lecture about T5: http://web.stanford.edu/class/cs224n/slides/cs224n-2021-lecture14-t5.pdf
+ Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer (https://arxiv.org/pdf/1910.10683.pdf)
+ 
 # Task 1 Inference 
 link to (notebook1)
 - Implement Softmax with Temp / Nucleus / Beam Search
