@@ -21,7 +21,8 @@ The goal of this exercise is to analyse T5 model performance from different aspe
 - translation: `bible_para` (https://huggingface.co/datasets/bible_para), `ted_talks_iwslt` (https://huggingface.co/datasets/ted_talks_iwslt) 
 - summarization : `cnn-dailymail` 
 - question answering: `squad`
-Note: `t5-small` can not handle sequences longer than 512 tokens; you would need to preprocess your datasets accordingly
+
+Note: `t5-small` can not handle sequences longer than 512 tokens; you would need to preprocess your datasets accordingly. Select ~1000 sentences from each of the datasets (use `test` when available, or `validation` split otherwise) 
 
 ## Evaluations
 - Summarizaiton: ROUGE (https://www.aclweb.org/anthology/W04-1013.pdf)
@@ -51,6 +52,7 @@ The goal of this exercice is to understand whether (and how) the attention can b
 # Task 3 (bonus? - 5pt)
  - take any available model on Hugging face which was trained/fine-tuned specifically for the above mentioned tasks (translation, summarization, question answerint)
  - perform task 1 and task 2 with those task-adapted models; Compare it to T5 performance/behaviour, and comment what is in common, and what is different. Think of potential reasons for such behaviour.  
+
 # Deliverables
 
 
