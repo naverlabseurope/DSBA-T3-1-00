@@ -4,22 +4,34 @@ The goal of this exercise is to analyse T5 model performance from different aspe
  - interpertability
 
 # T5 model
- - how to get if from Hugging face
- - to know more about it: 
- Stanford guest lecture about T5: http://web.stanford.edu/class/cs224n/slides/cs224n-2021-lecture14-t5.pdf
- Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer (https://arxiv.org/pdf/1910.10683.pdf)
-
+ - For this exercice you would need to get last dev version (`4.4.0.dev0`) of transformers from github
+ 
+ ```
+ git clone https://github.com/huggingface/transformers.git
+ %cd transformers
+ pip install .
+```
+ - You will use `t5-small` model from Hugging Face: https://huggingface.co/t5-small
+ 
+ To know more about T5 model: 
+  - Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer (https://arxiv.org/pdf/1910.10683.pdf)
+  - Stanford guest lecture about T5: http://web.stanford.edu/class/cs224n/slides/cs224n-2021-lecture14-t5.pdf
+  
 ## Datasets
-- Check T5 tasks datasets
+- translation: `bible_para` (https://huggingface.co/datasets/bible_para), `ted_talks_iwslt` (https://huggingface.co/datasets/ted_talks_iwslt) 
+- summarization : `cnn-dailymail` 
+- question answering: `squad`
+Note: `t5-small` can not handle sequences longer than 512 tokens; you would need to preprocess your datasets accordingly
 
 ## Evaluations
-- Summarizaiton (ROUGE) 
-- MT (BLEU) 
+- Summarizaiton: ROUGE (https://www.aclweb.org/anthology/W04-1013.pdf)
+- MT: BLEU (https://www.aclweb.org/anthology/P02-1040/)
+- Question Answering : exact match and macro-F1 (https://arxiv.org/pdf/1606.05250.pdf) 
 - evaluate the metrics or use existing implementations?
  
-# Task 1 Evaluation metrics (5 pt)
- - implement all the necessary evaluation metrics : BLEU, ROUGE
- - Optional: implement additional evaluation metrics for translation and/or summarization (bonus: 5 pt)
+# Task 1 Evaluation metrics (3 pt)
+ - implement evaluation metrics : BLEU, ROUGE
+ - Optional: implement additional evaluation metrics for translation and/or summarization tasks (bonus: 3 pt)
  
 # Task 1 Inference (8 pt)
 link to (notebook1)
@@ -28,13 +40,17 @@ link to (notebook1)
  
 ## Questions
 
-# Task 2 Attention Visualization (7 pt) 
-- Adapt the Transformers (@vassilina to show encoder-decoder attention)
-- All Tasks for T5
-- Visualizing attention: What is the difference in cross attention in different tasks. 
-- Show different patterns in different Heads (For this you will need to implement head confidence) 
+# Task 2 Attention Visualization (8 pt) 
 
-
+The goal of this exercice is to understand whether (and how) the attention can be used to interpret model's behaviour. 
+1  (4 pt) Implement cross-attention matrix vizualization
+  -  select several examples for each task and manually examine the attention patterns for each of those tasks. What are your observations? Is there any difference in attention patterns; is there any common patterns?  You can vizualize attention matrices per each head and each layer, 
+2.  (4 pt) Manual examination allows to get an intuition of what attention patterns are. Aggregation metrics allow to make corpus-wide conclusions about the roles of different attention heads. Check https://www.aclweb.org/anthology/P19-1580/  for more details. Implement one of the "aggregation" metrics proposed in that paper : confidence score or LRP. Compare the attention patterns across the tasks.  
+ 
+ 
+# Task 3 (bonus? - 5pt)
+ - take any available model on Hugging face which was trained/fine-tuned specifically for the above mentioned tasks (translation, summarization, question answerint)
+ - perform task 1 and task 2 with those task-adapted models; Compare it to T5 performance/behaviour, and comment what is in common, and what is different. Think of potential reasons for such behaviour.  
 # Deliverables
 
 
