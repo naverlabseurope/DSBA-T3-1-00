@@ -13,8 +13,8 @@ The goal of this exercise is to analyse T5 model performance from different aspe
 - Check T5 tasks datasets
 
 ## Evaluations
-- Summarizaiton (ROUGE) (Bonus extra eval. metrics - 3pt) 
-- MT (BLEU) (Bonus on extra eval. metrics -3 pt )
+- Summarizaiton (ROUGE) 
+- MT (BLEU) 
 - evaluate the metrics or use existing implementations?
  
 # Task 1 Evaluation metrics (5 pt)
