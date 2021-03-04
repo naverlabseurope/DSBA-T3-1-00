@@ -44,9 +44,11 @@ link to (notebook1)
 # Task 2 Attention Visualization (8 pt) 
 
 The goal of this exercice is to understand whether (and how) the attention can be used to interpret model's behaviour. 
-1  (4 pt) Implement cross-attention matrix vizualization
-  -  select several examples for each task and manually examine the attention patterns for each of those tasks. What are your observations? Is there any difference in attention patterns; is there any common patterns?  You can vizualize attention matrices per each head and each layer, 
-2.  (4 pt) Manual examination allows to get an intuition of what attention patterns are. Aggregation metrics allow to make corpus-wide conclusions about the roles of different attention heads. Check https://www.aclweb.org/anthology/P19-1580/  for more details. Implement one of the "aggregation" metrics proposed in that paper : confidence score or LRP. Compare the attention patterns across the tasks.  
+1.  (4 pt) Implement cross-attention matrix vizualization
+  -  select several examples for each task and manually examine the attention patterns for each of those tasks. What are your observations? Is there any difference in attention patterns; is there any common patterns? You can vizualize attention matrices per each head and each layer, or try to aggregate the attention values across heads/layers.
+  -  Consider examples from different categories that would take into account: model performance, input length, other?   Can you observe any patterns depending on the nature of example?
+    
+2.  (4 pt) Manual examination allows to get an intuition of what attention patterns are. Aggregation metrics allow to make corpus-wide conclusions about the roles of different attention heads. Check (this paper)[https://www.aclweb.org/anthology/P19-1580/]  for more details. Implement one of the "aggregation" metrics proposed in that paper : confidence score or LRP. Compare the attention patterns across the tasks.  
  
  
 # Task 3 (bonus? - 5pt)
