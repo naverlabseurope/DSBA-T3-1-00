@@ -1,16 +1,14 @@
 # Exercise 3
 After reading this document [Please look into this notebook](https://colab.research.google.com/drive/1Myb9ttbPggsdgh_fQFRdAt4CK8vpY7X9?usp=sharing)
 
-In this notebook containing an example on how to load a pretrained model inside the hugging face library and use it for generation tasks, we would like to ask you to do the same using other models and evaluate on other datasets. 
+Welcome to your last exercise in this learning journey :slightly_smiling_face: 
+We provide you with a notebook containing an example on how to load a pretrained model inside the hugging face library and use it for generation tasks, we would like to ask you to do the same using other models and evaluate on other datasets. 
 
-In this excercise you will be a master in loading Pretrained models, sampling from them as well as investigating what is working under the hood by interpreting their decisions. 
+In particular, in this excercise you will be a master in loading Pretrained models (like T5), writing your own decoding algorithms, as well as investigating what is happening under the hood by interpreting their decisions. You will be (almost) an expert on three tasks Machine Translation, Summarization and Question Answering. 
 
-In perticular you will be analyzing T5 model performance from different aspects
- - inference
- - interpertability
+The notebook contains some examples showing some guiding examples based on BART model. This model is a pretrained one that needs finetuning on the target task to perform well. The cool thing about T5 that it is trained jointly on many tasks both supervised and unsupervised such as LM, translation, summarization and question answering by reforming all tasks as "text" to "text". "For example, automatic summarization is done by feeding in a document
+followed by the text “Summarize:” and then the summary is predicted via autoregressive decoding." In this excercise you will have to append those tokens yourself in the input to the model to be able to use it as a summarization model. 
 
-The notebook contains some examples showing that models like BART needs finetuning on the target task. The cool thing about T5 that is trained jointly on many tasks such as translation, summarization and question answering by reforming all tasks as "text" to "text". "For example, automatic summarization is done by feeding in a document
-followed by the text “Summarize:” and then the summary is predicted via autoregressive decoding." In this excercise you will have to append those tokens yourself in the input to the model to be able to use it as a summarization model.
 
 -----
 
@@ -139,7 +137,12 @@ Overall you have Two tasks with 8 deliverables with 3 optional ones:
 - Deliverable Bonus 1 (5pt)
 - Deliverable Bonus 2 (5pt):
 
-Please check above the headlines 
-All deliverables are expected to be submitted in a single colab notebook. 
-- In your notebook please highlight each deliverable by a title (e.g. # Deliverable 1.2)..etc
-- Please stick to the format of each deliverable being a table short report or a plot. 
+# Submit your Exercise
+
+- All deliverables are expected to be submitted in a single colab notebook. 
+- In your notebook please highlight each deliverable by its title (e.g. # Deliverable 1.2)..etc
+- Please stick to the format of each deliverable being a table short report or a plot as identified above
+- submissions can be made through the following link (one submission per team) 
+- Please name your notebook  on the following format  DSBA_EXCERCISE3_FIRSTNAME_LASTNAME
+(where firstname and lastname are those of one who will submit the exercise on behalf of the team)
+
