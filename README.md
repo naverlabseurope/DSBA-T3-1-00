@@ -51,7 +51,7 @@ For each task you should give a certain prefix augemented to the input (e.g. "tr
 - Summarizaiton: ROUGE (https://www.aclweb.org/anthology/W04-1013.pdf)
 - MT: BLEU (https://www.aclweb.org/anthology/P02-1040/)
 - Question Answering : exact match and macro-F1 (https://arxiv.org/pdf/1606.05250.pdf) 
-
+- For those you will need a tokenizer you can use an existing implementation of the [MOSES tokenizer](https://pypi.org/project/mosestokenizer/) 
 ### Deliverable 1.2 (2 pt)
  - implement evaluation metrics : BLEU, ROUGE
  - Select ~1000 sentences from each of the datasets (use `test` when available, or `validation` split otherwise)
