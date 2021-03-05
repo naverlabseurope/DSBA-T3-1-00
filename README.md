@@ -61,7 +61,7 @@ https://huggingface.co/t5-base/blob/main/config.json
  - **Table2**: As a sanity check of your implementation use already existing implementation online of those metrics and compare them together with your implementation.
 
 ### Deliverable 1.2 Bonus  (extra 3 pts) 
- - **Table** Optional: implement additional evaluation metrics for translation and/or summarization tasks Compare them againe
+ - **Table** Optional: implement additional evaluation metrics for translation and/or summarization tasks 
 
 ## 1.3- Implement Decoding methods your own
 Now you are not allowed to use the existing implementation of the function `model.generate`. [Read here about different usages of this function including many decoding algorithms beam, sampling, top-k and nucleus sampling](https://huggingface.co/blog/how-to-generate)
@@ -75,7 +75,7 @@ Now you are not allowed to use the existing implementation of the function `mode
 - **Table1:** Check Correctness of your implementation, in a table show a comparison between results obtained from model.generate function and your implementation for different beam-sizes for beamsearch and top-p 
 
 - **Table2:** Compare between different decoding methods. for summarization and machine translation and question answering try different decoding methods for example try changing the top-p value in the nucleus sampling algorithm the temperature of the softmax and with the beamsize in the beam search (for this only you are allowed to use model.generate and existing implementation of evaluation metrics
-- **Short Report 300 words max:** Given the results you obtained above. Write a short report containing your conclusions on which are the best decoding algorithm / parameter for each task. Does increasing the beam size usually give better BLEU scores? Why or Why not?
+- **Short Report 300 words max:** Given the results you obtained above. Write a short report containing your conclusions on which are the best decoding algorithm / parameter for each task. Why do you think  Does increasing the beam size usually give better (BLEU) scores? Why or Why not?
 
 ---------------
 
@@ -95,7 +95,7 @@ We expect you to visualize at least three plots showing any of the following
 - Try to aggregate the attention values across heads/layers.
 - Consider examples from different categories that would take into account: model performance (hard vs easy examples), input length, different task.
 
-**Short report max 300 words:** Add below each of the attention values above. Your comments Highlighting those patterns and what do you observe. 
+**Short report max 300 words:** Add below each of the attention values above. Your comments Highlighting those patterns and what do you observe: eg. common or different patterns across tasks, how those patterns change across layers, individual attention heads versus aggregated attention patterns, any other observations. 
 
 ## 2.2 Implement Attention Matrix Aggregation
 Manual examination allows to get an intuition of what attention patterns are. Aggregation metrics allow to make corpus-wide conclusions about the roles of different attention heads. Check (this paper)[https://www.aclweb.org/anthology/P19-1580/]  for more details. Implement one of the "aggregation" metrics proposed in that paper : confidence score or LRP. Compare the attention patterns across the tasks.  
@@ -115,7 +115,7 @@ Manual examination allows to get an intuition of what attention patterns are. Ag
 
 ## Deliverable Bonus 1 (5pt)
 - **Table:** On a single task compare task 1 and 2 using several evaluation metrics and interpretability measures from the above (you can use existing implementation for those metrics). 
-- **Short report 300 words max** : comment on What is common and different between these models in terms of interpretability and evaluation metrics? Does the finetuned model perform better than T5 model who was trained on all tasks together? Why would you use on instead of the other? 
+- **Short report 300 words max** : comment on What is common and different between these models in terms of interpretability and evaluation metrics? Does the finetuned model perform better than T5 model who was trained on all tasks together? Why would you use one instead of the other? 
 
 
 # Bonus 2 (implement Minimum Bayes Risk Decoding)
