@@ -141,10 +141,9 @@ Overall you have Two tasks with 8 deliverables with 3 optional ones:
 
 - All deliverables are expected to be submitted in a single colab notebook. 
 - In your notebook please highlight each deliverable by its title (e.g. # Deliverable 1.2)..etc
-- Please stick to the format of each deliverable being a table short report or a plot as identified above
-- submissions can be made through the following link (one submission per team) 
+- Please stick to the format of each deliverable being a table short report or a plot as identified above 
 - Please name your notebook  on the following format  DSBA_EXCERCISE3_FIRSTNAME_LASTNAME
 (where firstname and lastname are those of one who will submit the exercise on behalf of the team)
 
 
-Submit your excercise by filling the following form: https://forms.gle/nqkcUw3v6oLxHEQJ6
+Submit your excercise by filling the following form (one submission per team): https://forms.gle/nqkcUw3v6oLxHEQJ6
