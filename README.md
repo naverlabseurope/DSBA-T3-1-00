@@ -146,3 +146,5 @@ Overall you have Two tasks with 8 deliverables with 3 optional ones:
 - Please name your notebook  on the following format  DSBA_EXCERCISE3_FIRSTNAME_LASTNAME
 (where firstname and lastname are those of one who will submit the exercise on behalf of the team)
 
+
+Submit your excercise by filling the following form: https://forms.gle/nqkcUw3v6oLxHEQJ6
