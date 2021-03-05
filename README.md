@@ -59,7 +59,7 @@ https://huggingface.co/t5-base/blob/main/config.json
  - implement evaluation metrics : BLEU, ROUGE
  - Select ~1000 sentences from each of the datasets (use `test` when available, or `validation` split otherwise)
  - **Table1**: Evaluate your model on those Metrics
- - **Table2**: Use already existing implementation of those metrics and compare them together with your implementation.
+ - **Table2**: As a sanity check of your implementation use already existing implementation online of those metrics and compare them together with your implementation.
 
 ### Deliverable 1.2 Bonus  (extra 3 pts) 
  - **Table** Optional: implement additional evaluation metrics for translation and/or summarization tasks Compare them againe
