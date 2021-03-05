@@ -74,14 +74,14 @@ Now you are not allowed to use the existing implementation of the function `mode
 
 ---------------
 
-# Task 2 Attention Visualization (8 pt) 
+# Task 2 Attention Visualization 
 
 The goal of this exercise is to understand whether (and how) the attention can be used to interpret model's behaviour. 
 
 ## 2.1 Implement cross-attention matrix vizualization
 Select several examples for each task and manually examine the attention patterns for each of those tasks. What are your observations? Is there any difference in attention patterns; is there any common patterns? 
 
-### Deliverable 2.1 (4 pt)
+### Deliverable 2.1 (3 pt)
 **Plots:** You are expected to output plots similar to those in [this blogpost](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
 (section attention visualization). 
 
@@ -132,7 +132,7 @@ Overall you have Two tasks with 8 deliverables with 3 optional ones:
 - Deliverable 1.1  (1 pt) 
 - Deliverable 1.2 (2 pt)
 - Deliverable 1.3 (8pt)
-- Deliverable 2.1 (4 pt)
+- Deliverable 2.1 (3 pt)
 - Deliverable 2.2  (4 pt) 
 - Deliverable Bonus 1 (3pt)
 - Deliverable Bonus 2 (5pt):
