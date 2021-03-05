@@ -38,15 +38,13 @@ followed by the text “Summarize:” and then the summary is predicted via auto
 - Question answering: BoolQ dataset (https://huggingface.co/datasets/boolq)
 
 
-**Note:** `t5-small` can not handle sequences longer than a certain length for each task; you would need to preprocess your datasets accordingly as done above in the tokenizer.
+**Note:** `t5-small` can not handle sequences longer than 512 max_length; you would need to preprocess your datasets accordingly as done above in the tokenizer.
 
-For each task you should give a certain prefix augemented to the input (e.g. "translate English to German: " to be able to translate an english input to german) to know each task 
+For each task you should give a certain prefix augemented to the input (e.g. "translate English to German: " to be able to translate an english input to german) to know each task prefix consider looking into the config https://huggingface.co/t5-small/blob/main/config.json . 
 
-https://huggingface.co/t5-base/blob/main/config.json
 
 ### Deliverable 1.1  (1 pt)
 **OUTPUT:** print some examples from the test/validation split of each task showing the input/model output/ target reference.
-
 
 ## 1.2 - Implement Extra evaluation Metrics
 
@@ -58,10 +56,7 @@ https://huggingface.co/t5-base/blob/main/config.json
  - implement evaluation metrics : BLEU, ROUGE
  - Select ~1000 sentences from each of the datasets (use `test` when available, or `validation` split otherwise)
  - **Table1**: Evaluate your model on those Metrics
- - **Table2**: As a sanity check of your implementation use already existing implementation online of those metrics and compare them together with your implementation.
-
-### Deliverable 1.2 Bonus  (extra 3 pts) 
- - **Table** Optional: implement additional evaluation metrics for translation and/or summarization tasks 
+ - **Table2**: As a sanity check of your implementation use already existing implementation online of those metrics and compare them together with your implementation. 
 
 ## 1.3- Implement Decoding methods your own
 Now you are not allowed to use the existing implementation of the function `model.generate`. [Read here about different usages of this function including many decoding algorithms beam, sampling, top-k and nucleus sampling](https://huggingface.co/blog/how-to-generate)
@@ -75,7 +70,7 @@ Now you are not allowed to use the existing implementation of the function `mode
 - **Table1:** Check Correctness of your implementation, in a table show a comparison between results obtained from model.generate function and your implementation for different beam-sizes for beamsearch and top-p 
 
 - **Table2:** Compare between different decoding methods. for summarization and machine translation and question answering try different decoding methods for example try changing the top-p value in the nucleus sampling algorithm the temperature of the softmax and with the beamsize in the beam search (for this only you are allowed to use model.generate and existing implementation of evaluation metrics
-- **Short Report 300 words max:** Given the results you obtained above. Write a short report containing your conclusions on which are the best decoding algorithm / parameter for each task. Why do you think  Does increasing the beam size usually give better (BLEU) scores? Why or Why not?
+- **Short Report 300 words max:** Given the results you obtained above. Write a short report containing your conclusions on which are the best decoding algorithm / parameter for each task. Why do you think they are the best? Does increasing the beam size usually give better scores? Why or Why not?
 
 ---------------
 
@@ -113,7 +108,7 @@ Manual examination allows to get an intuition of what attention patterns are. Ag
  - Perform task 1 and task 2 with those task-adapted models; Compare it to T5 performance/behaviour.  
 
 
-## Deliverable Bonus 1 (5pt)
+## Deliverable Bonus 1 (3pt)
 - **Table:** On a single task compare task 1 and 2 using several evaluation metrics and interpretability measures from the above (you can use existing implementation for those metrics). 
 - **Short report 300 words max** : comment on What is common and different between these models in terms of interpretability and evaluation metrics? Does the finetuned model perform better than T5 model who was trained on all tasks together? Why would you use one instead of the other? 
 
@@ -136,11 +131,10 @@ In this bonus task we ask you to implement this decoding method as the two one a
 Overall you have Two tasks with 8 deliverables with 3 optional ones: 
 - Deliverable 1.1  (1 pt) 
 - Deliverable 1.2 (2 pt)
-- Deliverable 1.2 Bonus (extra 3 pts) 
 - Deliverable 1.3 (8pt)
 - Deliverable 2.1 (4 pt)
 - Deliverable 2.2  (4 pt) 
-- Deliverable Bonus 1 (5pt)
+- Deliverable Bonus 1 (3pt)
 - Deliverable Bonus 2 (5pt):
 
 # Submit your Exercise
