@@ -20,7 +20,7 @@ followed by the text “Summarize:” and then the summary is predicted via auto
  
 ### T5 
 
- - Note: For this exercice you would need to get last dev version (`4.4.0.dev0`) of transformers from github
+ - Note: For this exercise you would need to get last dev version (`4.4.0.dev0`) of transformers from github
  
  ```
  git clone https://github.com/huggingface/transformers.git
@@ -84,7 +84,7 @@ Now you are not allowed to use the existing implementation of the function `mode
 
 # Task 2 Attention Visualization (8 pt) 
 
-The goal of this exercice is to understand whether (and how) the attention can be used to interpret model's behaviour. 
+The goal of this exercise is to understand whether (and how) the attention can be used to interpret model's behaviour. 
 
 ## 2.1 Implement cross-attention matrix vizualization
 Select several examples for each task and manually examine the attention patterns for each of those tasks. What are your observations? Is there any difference in attention patterns; is there any common patterns? 
