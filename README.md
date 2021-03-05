@@ -9,7 +9,6 @@ In particular, in this excercise you will be a master in loading Pretrained mode
 The notebook contains some examples showing some guiding examples based on BART model. This model is a pretrained one that needs finetuning on the target task to perform well. The cool thing about T5 that it is trained jointly on many tasks both supervised and unsupervised such as LM, translation, summarization and question answering by reforming all tasks as "text" to "text". "For example, automatic summarization is done by feeding in a document
 followed by the text “Summarize:” and then the summary is predicted via autoregressive decoding." In this excercise you will have to append those tokens yourself in the input to the model to be able to use it as a summarization model. 
 
-
 -----
 
 # TASK1: 
@@ -103,14 +102,21 @@ Manual examination allows to get an intuition of what attention patterns are. Ag
 
 ### Deliverable 2.2  (4 pt) 
 - **Plots and short report:** Implement one of these methods for Attention aggregation (Condifence score or LRP) and plot 3 plots showing some of the aspects above  
- 
+
+
+
+----------------------------------
+
+
 # Bonus 1 (experiment with finetuning)
  - Take any available model on Hugging face which was trained/fine-tuned specifically for the above mentioned tasks (translation, summarization, question answering)
  - Perform task 1 and task 2 with those task-adapted models; Compare it to T5 performance/behaviour.  
 
+
 ## Deliverable Bonus 1 (5pt)
 - **Table:** On a single task compare task 1 and 2 using several evaluation metrics and interpretability measures from the above (you can use existing implementation for those metrics). 
 - **Short report 300 words max** : comment on What is common and different between these models in terms of interpretability and evaluation metrics? Does the finetuned model perform better than T5 model who was trained on all tasks together? Why would you use on instead of the other? 
+
 
 # Bonus 2 (implement Minimum Bayes Risk Decoding)
 Neural Language Generation models are silly what they believe the highest likely sequence is usually an empty sequence (`<s></s>`) This problem is demonstrated in the following paper: [On NMT Search Errors and Model Errors: Cat Got Your Tongue?](https://www.aclweb.org/anthology/D19-1331/).
@@ -118,13 +124,13 @@ Neural Language Generation models are silly what they believe the highest likely
 This problem is puzzling many scientists at the moment. A method to overcome is to sample many output of the model and rank them according to their pairwise utility. This is a tracktable approximation of a method called Minimum bayes risk decoding. That has been recently proposed in this recent work [Is MAP Decoding All You Need? The Inadequacy of the Mode in Neural Machine Translation](https://arxiv.org/pdf/2005.10283.pdf).
 <img src=https://i.imgur.com/J0ePay7.png width=500>
 
-In this bonus task we ask you to implement this decoding method as the two one above 
+In this bonus task we ask you to implement this decoding method as the two one above (you can use any utility function of your choice in the paper they use METEOR python implementation is available online e.g. here https://pypi.org/project/textmetrics/).
 
 ## Deliverable Bonus 2 (5pt):
 - **Table:** Compare MBR decoding vs Beam search with beam size=5, beam size=10, beam size=15 other on machine translation task above.  
 - **Short Report 300 words max:** Given the results you obtained above. Write a short report containing your conclusions. What on which are the best decoding algorithm / parameter for each task. Why is that? what are your conclusions?  
 
-
+------------------
 
 # Summary of All Deliverables
 Overall you have Two tasks with 8 deliverables with 3 optional ones: 
@@ -143,7 +149,6 @@ Overall you have Two tasks with 8 deliverables with 3 optional ones:
 - In your notebook please highlight each deliverable by its title (e.g. # Deliverable 1.2)..etc
 - Please stick to the format of each deliverable being a table short report or a plot as identified above 
 - Please name your notebook  on the following format  DSBA_EXCERCISE3_FIRSTNAME_LASTNAME
-(where firstname and lastname are those of one who will submit the exercise on behalf of the team)
-
+(where firstname and lastname are those of the one who will submit the exercise on behalf of the team)
 
 Submit your excercise by filling the following form (one submission per team): https://forms.gle/nqkcUw3v6oLxHEQJ6
