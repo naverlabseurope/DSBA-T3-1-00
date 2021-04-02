@@ -45,7 +45,7 @@ followed by the text “Summarize:” and then the summary is predicted via auto
 For each task you should give a certain prefix augemented to the input (e.g. "translate English to German: " to be able to translate an english input to german) to know each task prefix consider looking into the config https://huggingface.co/t5-small/blob/main/config.json . 
 
 
-### Deliverable 1.1  (1 pt)
+### Deliverable 1.1  (2 pt)
 **OUTPUT:** print some examples from the test/validation split of each task showing the input/model output/ target reference.
 
 ## 1.2 - Implement Extra evaluation Metrics
@@ -54,7 +54,7 @@ For each task you should give a certain prefix augemented to the input (e.g. "tr
 - MT: BLEU (https://www.aclweb.org/anthology/P02-1040/)
 - Question Answering : exact match and macro-F1 (https://arxiv.org/pdf/1606.05250.pdf) 
 - For those you will need a tokenizer you can use an existing implementation of the [MOSES tokenizer](https://pypi.org/project/mosestokenizer/) 
-### Deliverable 1.2 (2 pt)
+### Deliverable 1.2 (3 pt)
  - implement evaluation metrics : BLEU, ROUGE
  - Select ~1000 sentences from each of the datasets (use `test` when available, or `validation` split otherwise)
  - **Table1**: Evaluate your model on those Metrics
@@ -131,13 +131,13 @@ In this bonus task we ask you to implement this decoding method as the two one a
 
 # Summary of All Deliverables
 Overall you have Two tasks with 8 deliverables with 3 optional ones: 
-- Deliverable 1.1  (1 pt) 
-- Deliverable 1.2 (2 pt)
-- Deliverable 1.3 (8pt)
+- Deliverable 1.1  (2 pt) 
+- Deliverable 1.2 (3 pt)
+- Deliverable 1.3 (8 pt)
 - Deliverable 2.1 (3 pt)
 - Deliverable 2.2  (4 pt) 
 - Deliverable Bonus 1 (3pt)
-- Deliverable Bonus 2 (5pt):
+- Deliverable Bonus 2 (5pt)
 
 # Submit your Exercise
 
