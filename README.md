@@ -1,7 +1,7 @@
 ## Due date: March 31, 2022
 
 # Exercise 3
-After reading this document ~~[Please look into this notebook](https://colab.research.google.com/drive/1Myb9ttbPggsdgh_fQFRdAt4CK8vpY7X9?usp=sharing)~~
+After reading this document 
 [Please look at this notebook](https://colab.research.google.com/drive/15gP5cn8w7j3Jk_1AuYLB1uyJppx6E1Fn?usp=sharing)
 
 Welcome to your last exercise in this learning journey :slightly_smiling_face: 
