@@ -1,7 +1,8 @@
 ## Due date: March 31, 2022
 
 # Exercise 3
-After reading this document [Please look into this notebook](https://colab.research.google.com/drive/1Myb9ttbPggsdgh_fQFRdAt4CK8vpY7X9?usp=sharing)
+After reading this document ~~[Please look into this notebook](https://colab.research.google.com/drive/1Myb9ttbPggsdgh_fQFRdAt4CK8vpY7X9?usp=sharing)~~
+[Please look at this notebook](https://colab.research.google.com/drive/1FUeaWOPS84ZT3VY0NGHBcgilXU8WuCEl?usp=sharing)
 
 Welcome to your last exercise in this learning journey :slightly_smiling_face: 
 We provide you with a notebook containing an example on how to load a pretrained model inside the hugging face library and use it for generation tasks, we would like to ask you to do the same using other models and evaluate on other datasets. 
