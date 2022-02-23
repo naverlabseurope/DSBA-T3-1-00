@@ -85,18 +85,18 @@ Select several examples for each task and manually examine the attention pattern
 **Plots:** You are expected to output plots similar to those in [this blogpost](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
 (section attention visualization). 
 
-We expect you to visualize at least three plots showing any of the following
+We expect you to visualize at least three plots showing the following
 - Vizualize attention matrices per each head and each layer
-- Try to aggregate the attention values across heads/layers.
+- Aggregate the attention values across heads/layers.
 - Consider examples from different categories that would take into account: model performance (hard vs easy examples), input length, different task.
 
 **Short report max 300 words:** Add below each of the attention values above. Your comments Highlighting those patterns and what do you observe: eg. common or different patterns across tasks, how those patterns change across layers, individual attention heads versus aggregated attention patterns, any other observations. 
 
 ## 2.2 Implement Attention Matrix Aggregation
-Manual examination allows to get an intuition of what attention patterns are. Aggregation metrics allow to make corpus-wide conclusions about the roles of different attention heads. Check (this paper)[https://www.aclweb.org/anthology/P19-1580/]  for more details. Implement one of the "aggregation" metrics proposed in that paper : confidence score or LRP. Compare the attention patterns across the tasks.  
+Manual examination allows to get an intuition of what attention patterns are. Aggregation metrics allow to make corpus-wide conclusions about the roles of different attention heads. Check (this paper)[https://www.aclweb.org/anthology/P19-1580/]  for more details. Implement one or two of the "aggregation" metrics proposed in that paper or (this other paper)[https://aclanthology.org/2021.findings-acl.250/]. Compare the attention patterns across the tasks.  
 
 ### Deliverable 2.2  (4 pt) 
-- **Plots and short report:** Implement one of these methods for Attention aggregation (Condifence score or LRP) and plot 3 plots showing some of the aspects above  
+- **Plots and short report:** Implement one of these methods for Attention aggregation and plot 3 plots showing some of the aspects above and discuss what do  you learn from aggregated attentions.
 
 
 
