@@ -19,8 +19,6 @@ followed by the text “Summarize:” and then the summary is predicted via auto
  
 ### T5 
 
- - Note: For this exercise you would need to get last dev version (`4.4.0.dev0`) of transformers from github
- 
  ```
  git clone https://github.com/huggingface/transformers.git
  %cd transformers
