@@ -147,4 +147,4 @@ Overall you have Two tasks with 8 deliverables with 3 optional ones:
 (where firstname and lastname are those of the one who will submit the exercise on behalf of the team)
 - Please make sure that your notebook is publicly accessible through the provided URL. 
 
-Submit your excercise by filling the following form (one submission per team): https://forms.gle/nqkcUw3v6oLxHEQJ6
+Submit your excercise by filling the following form (one submission per team): https://forms.gle/8439iGzRF8fZ9GgT6
