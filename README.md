@@ -1,4 +1,4 @@
-## Due date: April, 5 2021
+## Due date: March 31, 2022
 
 # Exercise 3
 After reading this document [Please look into this notebook](https://colab.research.google.com/drive/1Myb9ttbPggsdgh_fQFRdAt4CK8vpY7X9?usp=sharing)
