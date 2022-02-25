@@ -1,4 +1,4 @@
-## Due date: March 31, 2022
+## Due date: April 15, 2022
 
 # Exercise 3
 After reading this document 
